@@ -1,0 +1,29 @@
+
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>merk</th>
+      <th>type</th>
+      <th>introductiejaar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let auto of autolijst">
+        <td>{{auto.id}}</td>
+        <td>{{auto.merk}}</td>
+        <td>{{auto.type}}</td>
+        <td>{{auto.introductiejaar}}</td>
+        <td>
+            <button (click)="delete(auto)">Verwijder</button>
+            <button (click)="update(auto)">Wijzig</button>
+            <button (click)="retrieve(auto)">Details</button>
+          </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
+<app-autodetails [auto]=geselecteerdeAuto [buttonid]=buttonId></app-autodetails>

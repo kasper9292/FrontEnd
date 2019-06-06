@@ -1,0 +1,17 @@
+<div *ngIf=pakketje>
+
+<label>Id: {{pakketje.id}}</label>
+<br>
+<label>Merk: <input type="text" [(ngModel)]="pakketje.merk"></label>
+<br> <label>Type: <input type="text" [(ngModel)]="pakketje.type"></label>
+
+<br> <label>Introductiejaar: <input type="text" [(ngModel)]="pakketje.introductiejaar"></label>
+
+<br> <label>Omschrijving: <input type="text" [(ngModel)]="pakketje.toelichting"></label>
+
+<br><br>
+
+<button *ngIf="btnId==1" (click)="update()">Update</button>
+<button *ngIf="btnId==2" (click)="delete()">Delete</button>
+
+</div>
