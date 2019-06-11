@@ -1,0 +1,16 @@
+<p>
+  inputform works!?
+</p>
+<div ng-app="FormApplicatie" ng-controller="formControl">
+  <form novalidate>
+    Naam:     <input type="text" ng-model="form.naam">      <br>
+    Adres:    <input type="text" ng-model="form.adres">     <br>
+    Postcode: <input type="text" ng-model="form.postcode">  <br> 
+    Stad:     <input type="text" ng-model="form.stad">      <br>
+    Pakket:   <input type="text" ng-model="form.pakket">    <br>
+    Afzender: <input type="text" ng-model="form.afzender">  <br>
+    Gewicht:  <input type="text" ng-model="form.gewicht">   <br>
+              <input type="submit" ng-click="submit()" value="Submit">
+  </form>
+</div>
+<p>{{pakketinfo}}</p>

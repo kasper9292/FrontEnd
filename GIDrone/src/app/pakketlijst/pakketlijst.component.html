@@ -1,0 +1,27 @@
+
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>adres</th>
+      <th>naam</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pkt of pakketlijst">
+        <td>{{pkt.id}}</td>
+        <td>{{pkt.adres}}</td>
+        <td>{{pkt.naam}}</td>
+        <td>
+            <button (click)="delete(pkt)">Verwijder</button>
+            <button (click)="update(pkt)">Wijzig</button>
+            <button (click)="retrieve(pkt)">Details</button>
+          </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<hr>
+<app-pakketdetails [pakket]=pakket [buttonid]=buttonId></app-pakketdetails>
