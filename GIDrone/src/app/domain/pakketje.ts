@@ -8,7 +8,7 @@ export class Pakketje {
         private _huidige_locatie : string,
         private _adres : string, 
         private _afzender : string, 
-        private _gewicht, 
+        private _gewicht: number, 
         private _id : number) {}
 
         get id() : number { return this._id }

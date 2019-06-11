@@ -14,7 +14,7 @@ const httpOptions = {
 })
 
 export class DroneService {
-  dronebase : string = "http://localhost:8080/pakketje"; //LINK NAAR ENDPOINT
+  dronebase : string = "http://localhost:8080/dronebase"; //MOET LINKEN NAAR ENDPOINT???
   
   constructor(private http: HttpClient) {}
 

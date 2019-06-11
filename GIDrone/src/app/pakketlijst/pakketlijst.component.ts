@@ -21,7 +21,7 @@ export class PakketlijstComponent implements OnInit {
     this.droneservice.getPakketjes().subscribe(
       (data : Pakketje[]) => this.pakketlijst = data,
       (error: HttpErrorResponse) => { 
-        console.log("Dit gaat niet goed...");
+        console.log("Oh nee, hè! Gaat het weer fout!");
         console.log(error.message);
         
       },

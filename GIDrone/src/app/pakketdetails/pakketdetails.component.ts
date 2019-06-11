@@ -4,9 +4,9 @@ import { DroneService } from '../service/pakket.service';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
-  selector: 'app-autodetails',
-  templateUrl: './autodetails.component.html',
-  styleUrls: ['./autodetails.component.css']
+  selector: 'app-pakketdetails',
+  templateUrl: './pakketdetails.component.html',
+  styleUrls: ['./pakketdetails.component.css']
 })
 export class PakketdetailsComponent implements OnInit {
 
@@ -22,7 +22,7 @@ export class PakketdetailsComponent implements OnInit {
     this.droneservice.delete(this.pakket.id).subscribe(
       (data: void) => console.log(data),
       (error: HttpErrorResponse) => {
-        alert("Er is een fout opgetreden bij het verwijderen van de auto.\n" + error.status + " " + error)
+        alert("Er is een fout opgetreden bij het verwijderen van het pakket.\n" + error.status + " " + error)
         console.log("Dit gaat niet goed...");
         console.log(error);
 

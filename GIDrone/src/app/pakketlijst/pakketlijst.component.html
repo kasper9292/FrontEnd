@@ -4,21 +4,19 @@
   <thead>
     <tr>
       <th>id</th>
-      <th>merk</th>
-      <th>type</th>
-      <th>introductiejaar</th>
+      <th>adres</th>
+      <th>naam</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let auto of autolijst">
-        <td>{{auto.id}}</td>
-        <td>{{auto.merk}}</td>
-        <td>{{auto.type}}</td>
-        <td>{{auto.introductiejaar}}</td>
+    <tr *ngFor="let pkt of pakketlijst">
+        <td>{{pkt.id}}</td>
+        <td>{{pkt.adres}}</td>
+        <td>{{pkt.naam}}</td>
         <td>
-            <button (click)="delete(auto)">Verwijder</button>
-            <button (click)="update(auto)">Wijzig</button>
-            <button (click)="retrieve(auto)">Details</button>
+            <button (click)="delete(pkt)">Verwijder</button>
+            <button (click)="update(pkt)">Wijzig</button>
+            <button (click)="retrieve(pkt)">Details</button>
           </td>
     </tr>
   </tbody>
@@ -26,4 +24,4 @@
 
 <br>
 <hr>
-<app-autodetails [auto]=geselecteerdeAuto [buttonid]=buttonId></app-autodetails>
+<app-pakketdetails [pakket]=pakket [buttonid]=buttonId></app-pakketdetails>

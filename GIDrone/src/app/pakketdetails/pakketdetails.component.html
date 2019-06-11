@@ -1,13 +1,9 @@
-<div *ngIf=pakketje>
+<div *ngIf=pakketlijst>
 
-<label>Id: {{pakketje.id}}</label>
+<label>Id: {{pakketlijst.id}}</label>
 <br>
-<label>Merk: <input type="text" [(ngModel)]="pakketje.merk"></label>
-<br> <label>Type: <input type="text" [(ngModel)]="pakketje.type"></label>
-
-<br> <label>Introductiejaar: <input type="text" [(ngModel)]="pakketje.introductiejaar"></label>
-
-<br> <label>Omschrijving: <input type="text" [(ngModel)]="pakketje.toelichting"></label>
+<label>Ontvanger: <input type="text" [(ngModel)]="pakketlijst.naam"></label>
+<br> <label>Afzender: <input type="text" [(ngModel)]="pakketlijst.afzender"></label>
 
 <br><br>
 
