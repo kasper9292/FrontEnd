@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Pakketje } from '../domain/pakketje';
 import { FormControl, NgControl, Form } from '@angular/forms';
+import { format } from 'url';
 
 @Component({
   selector: 'app-inputform',
@@ -9,14 +10,12 @@ import { FormControl, NgControl, Form } from '@angular/forms';
 })
 export class InputformComponent implements OnInit {
 
-  @Input("form") pakketinfo : string; 
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  submit() : void {
-    console.log(this.pakketinfo);
+  submit(form: any){
+    console.log(form.value);
   }
 }
