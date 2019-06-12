@@ -1,6 +1,5 @@
 export class Pakketje {
     constructor(
-        // private _info : string[] = ["naam", "postcode", "stad", "pakket", "huidige locatie"], 
         private _naam : string, 
         private _postcode : string, 
         private _stad : string, 
