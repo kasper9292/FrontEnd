@@ -12,6 +12,7 @@ import { InputformComponent } from './inputform/inputform.component';
 import { MapviewComponent } from './mapview/mapview.component';
 import { CommonModule } from '@angular/common';
 import { HoofdmenuComponent } from './hoofdmenu/hoofdmenu.component';
+import { OrbmakerComponent } from './orbmaker/orbmaker.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HoofdmenuComponent } from './hoofdmenu/hoofdmenu.component';
     PakketdetailsComponent,
     InputformComponent,
     MapviewComponent,
-    HoofdmenuComponent
+    HoofdmenuComponent,
+    OrbmakerComponent
   ],
   imports: [
     HttpClientModule,

@@ -6,14 +6,27 @@ import { PakketlijstComponent } from './pakketlijst/pakketlijst.component';
 import { InputformComponent } from './inputform/inputform.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "/mapview", pathMatch: "full" },
-  {
-    path: "mapview", component: MapviewComponent
+  { 
+    path: "", 
+    redirectTo: "/mapview", 
+    pathMatch: "full" 
   },
   {
-    path: "pakketlijst", component: PakketlijstComponent
+    path: "mapview", 
+    component: MapviewComponent
   },
-  { path: "inputform", component: InputformComponent },
+  {
+    path: "pakketlijst", 
+    component: PakketlijstComponent
+  },
+  { 
+    path: "inputform", 
+    component: InputformComponent 
+  },
+  {
+    path: "**", 
+    component: MapviewComponent
+  }
 ];
 
 
