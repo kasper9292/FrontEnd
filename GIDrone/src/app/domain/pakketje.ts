@@ -10,13 +10,23 @@ export class Pakketje {
         private _gewicht: number, 
         private _id : number) {}
 
-        get id() : number { return this._id }
-        get gewicht() : number { return this._gewicht } 
-        get afzender() : string { return this._afzender }
-        get naam() : string { return this._naam } 
-        get postcode() : string { return this._postcode } 
-        get stad() : string { return this._stad } 
-        get pakket() : string  { return this._pakket } 
-        get huidige_locatie() : string { return this._huidige_locatie }
-        get adres() : string { return this._adres } 
+        get id() : number { return this.id }
+        get gewicht() : number { return this.gewicht } 
+        get afzender() : string { return this.afzender }
+        get naam() : string { return this.naam } 
+        get postcode() : string { return this.postcode } 
+        get stad() : string { return this.stad } 
+        get pakket() : string  { return this.pakket } 
+        get huidige_locatie() : string { return this.huidige_locatie }
+        get adres() : string { return this.adres }
+
+        // set id(id : number) {  this.id = id} //Hoort niet echt nodig te zijn, toch?
+        set gewicht(gewicht : number) { this.gewicht = gewicht}
+        set afzender(afzender : string) {  this.afzender = afzender }
+        set naam(naam: string) {  this.naam = naam } 
+        set postcode(postcode : string) { this.postcode = postcode} 
+        set stad(stad : string) { this.stad = stad } 
+        set pakket(pakket : string) { this.pakket = pakket } 
+        set huidige_locatie(locatie : string)  {  this.huidige_locatie = locatie}
+        set adres(adres : string)  {  this.adres = adres}
 }

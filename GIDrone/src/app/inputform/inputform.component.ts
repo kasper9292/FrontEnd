@@ -21,19 +21,13 @@ export class InputformComponent implements OnInit {
 
   submit(form: any){
     console.log(form.value);
-    this.pakket = new Pakketje(
-      form.value.naam,      //naam
-      form.value.postcode,  //postcode
-      form.value.stad,      //stad  
-      form.value.pakket,    //pakketnaam
-      null,                 //huidige locatie
-      form.value.adres,     //adres
-      form.value.afzender,  //afzender
-      form.value.gewicht,   //gewicht
-      null);                 //id (gaat dit goed?)
+    this.pakket = form.value;
+    console.log(this.pakket);
     console.log(JSON.stringify(this.pakket));
     this.droneservice.create(this.pakket).subscribe(
-      (data : Pakketje) => data = this.pakket,
+      (data : Pakketje) => 
+      {data = this.pakket
+      },
       (error: HttpErrorResponse) => { 
       console.log("Oh nee, hè! Gaat het weer fout! GODVERDOMME");
       console.log(error.message);
