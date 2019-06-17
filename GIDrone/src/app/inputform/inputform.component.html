@@ -1,9 +1,9 @@
 <div>
   <form #form="ngForm" (ngSubmit)="submit(form)">
+    <br>
     Naam:     <input type="text" [(ngModel)]="formnaam"     name="naam">      <br>
     Adres:    <input type="text" [(ngModel)]="formadres"    name="adres">     <br>
-    Stad:     <input type="text" [(ngModel)]="formstad"     name="stad">      <br>
-              <input type="submit" value="Submit">
+    Stad:     <input type="text" [(ngModel)]="formstad"     name="stad">      <br><br>
+              <button routerLink="/pakketlijst" [routerLinkActive]="['actief']" type="submit" value="Submit">Submit</button>
   </form>
 </div>
-<p>{{form.value | json}}</p>
