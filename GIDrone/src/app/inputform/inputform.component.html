@@ -2,11 +2,7 @@
   <form #form="ngForm" (ngSubmit)="submit(form)">
     Naam:     <input type="text" [(ngModel)]="formnaam"     name="naam">      <br>
     Adres:    <input type="text" [(ngModel)]="formadres"    name="adres">     <br>
-    Postcode: <input type="text" [(ngModel)]="formpostcode" name="postcode">  <br> 
     Stad:     <input type="text" [(ngModel)]="formstad"     name="stad">      <br>
-    Pakket:   <input type="text" [(ngModel)]="formpakket"   name="pakket">    <br>
-    Afzender: <input type="text" [(ngModel)]="formafzender" name="afzender">  <br>
-    Gewicht:  <input type="text" [(ngModel)]="formgewicht"  name="gewicht">   <br>
               <input type="submit" value="Submit">
   </form>
 </div>

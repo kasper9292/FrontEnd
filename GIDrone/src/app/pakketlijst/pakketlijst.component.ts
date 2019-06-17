@@ -17,7 +17,6 @@ export class PakketlijstComponent implements OnInit {
   constructor(private droneservice: DroneService ) { }
 
   ngOnInit() {
-    // this.autolijst = this.autoservice.getAutos();
     this.droneservice.getPakketjes().subscribe(
       (data : Pakketje[]) => this.pakketlijst = data,
       (error: HttpErrorResponse) => { 

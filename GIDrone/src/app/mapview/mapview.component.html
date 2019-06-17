@@ -1,4 +1,15 @@
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-  <agm-circle [latitude]="lat2" [longitude]="lng2" [radius]="30" [fillOpacity]="0.8"></agm-circle>
+    <agm-circle *ngFor="let orb of coordinaten" 
+    [latitude]="orb.lat" 
+    [longitude]="orb.long" 
+    [radius]="30" 
+    [fillOpacity]="0.8">
+  </agm-circle>
+  <agm-polyline>
+      <agm-polyline-point [latitude]="lat" [longitude]="lng">
+      </agm-polyline-point>
+    <agm-polyline-point *ngFor="let orb of coordinaten"  [latitude]="orb.lat" [longitude]="orb.long">
+    </agm-polyline-point>
+  </agm-polyline>
 </agm-map>

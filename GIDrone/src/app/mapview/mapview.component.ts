@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { }
 import { Orb } from '../orbmaker/orbmaker.component';
 
 @Component({
@@ -13,13 +14,16 @@ export class MapviewComponent implements OnInit {
   ngOnInit() {
   }
 
+
   //ITPH
   lat: number = 52.509084;
   lng: number = 6.066918;
   zoom: number = 14;
 
-  //De Peperbus
-  lat2: number = 52.512307; 
-  lng2 : number = 6.089754;
-
+  //De Peperbus en andere zaken
+  coordinaten = [
+    {lat: 52.512307, long: 6.089754}, 
+    {lat: 52.513992, long: 6.068717},
+    {lat: 52.520138, long: 6.094287},
+    {lat: 52.514251, long: 6.111607}];
 }
