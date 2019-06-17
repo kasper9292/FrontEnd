@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrbmakerComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit() {
@@ -14,4 +16,20 @@ export class OrbmakerComponent implements OnInit {
 
   //https://angular-maps.com/api-docs/agm-core/directives/agmcircle
   //https://angular-maps.com/api-docs/agm-core/directives/agmpolyline
+}
+
+export class Orb {
+
+  constructor(
+    private _lat : number,
+    private _long: number,
+    private _radius: number){}
+
+    get lat() { return this.lat }
+    get long() { return this.long }
+    get radius() { return this.long }
+
+    set lat(lat : number) { this.lat = lat }
+    set long(long : number ) { this.long = long }
+    set radius(rad : number) { this.radius = rad }
 }

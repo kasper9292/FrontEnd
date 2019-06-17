@@ -20,19 +20,16 @@ export class InputformComponent implements OnInit {
   }
 
   submit(form: any){
-    console.log(form.value);
     this.pakket = form.value;
-    console.log(this.pakket);
-    console.log(JSON.stringify(this.pakket));
     this.droneservice.create(this.pakket).subscribe(
       (data : Pakketje) => 
       {data = this.pakket
       },
       (error: HttpErrorResponse) => { 
-      console.log("Oh nee, hè! Gaat het weer fout! GODVERDOMME");
+      console.log("Oh nee, hè! Gaat het weer fout!");
       console.log(error.message);
       
     },
-    ()=>{console.log("Compleet")}); //tot hier werkt ie
+    ()=>{console.log("Compleet")});
   }s
 }
