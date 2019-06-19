@@ -22,14 +22,15 @@ export class Orb {
 
   constructor(
     private _lat : number,
-    private _long: number,
-    private _radius: number){}
+    private _long: number
+    // ,private _radius: Number
+    ){}
 
     get lat() { return this.lat }
     get long() { return this.long }
-    get radius() { return this.long }
+    // get radius() { return this.radius }
 
     set lat(lat : number) { this.lat = lat }
     set long(long : number ) { this.long = long }
-    set radius(rad : number) { this.radius = rad }
+    // set radius(rad : Number) { this.radius = rad }
 }

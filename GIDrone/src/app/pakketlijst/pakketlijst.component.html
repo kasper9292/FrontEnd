@@ -3,21 +3,16 @@
 <table>
   <thead>
     <tr>
-      <th>id</th>
-      <th>adres</th>
-      <th>naam</th>
+      <th>ID</th>
+      <th>Adres</th>
+      <th>Naam</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let pkt of pakketlijst">
         <td>{{pkt.id}}</td>
-        <td>{{pkt.adres}}</td>
+        <td>{{pkt.adres}}, {{pkt.stad}}</td>
         <td>{{pkt.naam}}</td>
-        <td>
-            <button (click)="delete(pkt)">Verwijder</button>
-            <button (click)="update(pkt)">Wijzig</button>
-            <button (click)="retrieve(pkt)">Details</button>
-          </td>
     </tr>
   </tbody>
 </table>

@@ -1,0 +1,18 @@
+div{
+    align-content: center;
+    text-align: center;
+    font-size: 150%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Impact, sans-serif;
+    display: inline-block;
+    font-size: 16px;   
+}
