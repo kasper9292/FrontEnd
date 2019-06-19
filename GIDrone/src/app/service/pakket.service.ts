@@ -19,20 +19,20 @@ export class DroneService {
   constructor(private http: HttpClient) {}
 
   public getPakketjes(): Observable<Pakketje[]> {
-    return this.http.get <Pakketje[]> (this.dronebase);
+    return this.http.get <Pakketje[]> (this.dronebase + '/pakket');
   }
 
   public findById(id: number): Observable<Pakketje> {
-    console.log(`${this.dronebase}/${id}`)
+    console.log(`${this.dronebase}/pakket/${id}`)
     return this
       .http.get<Pakketje>(
-        `${this.dronebase}/${id}`)
+        `${this.dronebase}/pakket/${id}`)
   }
 
   public create(pakketje: Pakketje): Observable<Pakketje>{
     return this
       .http.post<Pakketje>(
-        `${this.dronebase}/`, 
+        `${this.dronebase}/pakket`, 
         pakketje, 
         httpOptions)
   }
@@ -40,7 +40,7 @@ export class DroneService {
   public update(pakketje: Pakketje): Observable<Pakketje>{
     return this
       .http.put<Pakketje>(
-        `${this.dronebase}/${pakketje.id}`, 
+        `${this.dronebase}/pakket/${pakketje.id}`, 
         pakketje, 
         httpOptions)
   }
@@ -49,7 +49,7 @@ export class DroneService {
     return this
       .http
       .delete<void>(
-        `${this.dronebase}/${id}`
+        `${this.dronebase}/pakket/${id}`
       ) 
   }
 
