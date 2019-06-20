@@ -49,7 +49,6 @@ export class InputformComponent implements OnInit {
         (error: HttpErrorResponse) => { 
         console.log("Oh nee, hè! Gaat het weer fout!");
         console.log(error.message);
-
       },
       ()=>{console.log("Compleet")});
       console.log(this.pakket);

@@ -23,7 +23,7 @@ export class DroneService {
   }
 
   public findById(id: number): Observable<Pakketje> {
-    console.log(`${this.dronebase}/${id}`)
+    console.log(`${this.dronebase}/pakket/${id}`)
     return this
       .http.get<Pakketje>(
         `${this.dronebase}/pakket/${id}`)
