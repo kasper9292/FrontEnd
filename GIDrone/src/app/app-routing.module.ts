@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MapviewComponent } from './mapview/mapview.component';
-import { PakketdetailsComponent } from './pakketdetails/pakketdetails.component';
 import { PakketlijstComponent } from './pakketlijst/pakketlijst.component';
 import { InputformComponent } from './inputform/inputform.component';
 
