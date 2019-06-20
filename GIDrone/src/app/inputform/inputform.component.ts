@@ -5,6 +5,7 @@ import { format } from 'url';
 import { DroneService } from '../service/pakket.service';
 import { GeoService } from '../service/geo.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inputform',
@@ -13,7 +14,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class InputformComponent implements OnInit {
 
-  constructor(private droneservice : DroneService, private geoservice : GeoService) { }
+  constructor(private droneservice : DroneService, private geoservice : GeoService, public router: Router) { }
 
   pakket : Pakketje;
   geodata : any;
@@ -53,5 +54,6 @@ export class InputformComponent implements OnInit {
       ()=>{console.log("Compleet")});
       console.log(this.pakket);
     }
+    this.router.navigate(['pakketlijst']);
   }
 }
