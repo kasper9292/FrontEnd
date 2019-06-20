@@ -1,10 +1,10 @@
-<div>
-  <form #form="ngForm" (ngSubmit)="submit(form)">
-    <br>
-    Naam:     <input type="text" [(ngModel)]="formnaam"         name="naam">      <br>
-    Adres:    <input type="text" [(ngModel)]="formadres"        name="adres">     <br>
-    Stad:     <input type="text" [(ngModel)]="formstad"         name="stad">      <br>
-                                  <br>
-              <button type="submit" value="Submit">Submit</button>
-   </form>
-</div>
+
+  <div>
+    <form #form="ngForm" (ngSubmit)="submit(form)">
+      <br>
+      Naam:     <input type="text" [(ngModel)]="formnaam"         name="naam">      <br>
+      Adres:    <input type="text" [(ngModel)]="formadres"        name="adres">     <br>
+      Stad:     <input type="text" [(ngModel)]="formstad"         name="stad">      <br><br>
+                <button type="submit" value="Submit">Submit</button>
+    </form>
+  </div>
