@@ -35,7 +35,7 @@ export class InputformComponent implements OnInit {
       console.log(error.message);
 
     },
-    ()=>{console.log("Compleet")});;
+    ()=>{console.log("Compleet")});
   }
 
   actual_submit(){
