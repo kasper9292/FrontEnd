@@ -1,9 +1,12 @@
 <div>
   <form #form="ngForm" (ngSubmit)="submit(form)">
     <br>
-    Naam:     <input type="text" [(ngModel)]="formnaam"     name="naam">      <br>
-    Adres:    <input type="text" [(ngModel)]="formadres"    name="adres">     <br>
-    Stad:     <input type="text" [(ngModel)]="formstad"     name="stad">      <br><br>
-              <button routerLink="/pakketlijst" [routerLinkActive]="['actief']" type="submit" value="Submit">Submit</button>
-  </form>
+    Naam:     <input type="text" [(ngModel)]="formnaam"         name="naam">      <br>
+    Adres:    <input type="text" [(ngModel)]="formadres"        name="adres">     <br>
+    Stad:     <input type="text" [(ngModel)]="formstad"         name="stad">      <br>
+    Latitude: <input type="text" [(ngModel)]="formlatitude"     name="latitude">  <br>
+    Longitude:<input type="text" [(ngModel)]="formlongitude"    name="longitude"> <br><br>
+              <!-- <button routerLink="/pakketlijst" [routerLinkActive]="['actief']" type="submit" value="Submit">Submit</button> -->
+              <button type="submit" value="Submit">Submit</button>
+   </form>
 </div>
