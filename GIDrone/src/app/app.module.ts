@@ -27,7 +27,7 @@ import { APIKEY } from './APIKEY';
     CommonModule,
     AppRoutingModule,
     FormsModule,
-    AgmCoreModule.forRoot({apiKey : 'AIzaSyCbbuSE2ldNYOruJkNG3GYEiDuPnmnQAFg'})
+    AgmCoreModule.forRoot({apiKey : 'AIzaSyBSyAlsETMtfQMOMSsESX6FnRP968wcWoI'})
   ],
   providers: [],
   bootstrap: [AppComponent]
